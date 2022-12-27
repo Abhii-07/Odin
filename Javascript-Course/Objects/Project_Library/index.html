@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <header>
+        <h1>A Simple Library</h1>
+        <p id="subHeading">With local storage. By Zach Ingle</p>
+    </header>
+    <main>
+        <button class="new">Add a book</button>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>TitleData</td>
+                    <td>AuthorData</td>
+                    <td>PagesData</td>
+                    <td>ReadData</td>
+                    <td><button>Change read status</button></td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tbody>
+            </table>
+        </div>
+        <div class="form hidden">
+            <h2>Adding/Editing a book</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="pages" placeholder="Pages" min="0">
+            <fieldset role="radiogroup">
+                <legend>Read book?</legend>
+                <label for="yes">
+                    <input type="radio" id="yes" name="read" value="yes" checked>
+                    <span>Yes</span>
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="read" value="no">
+                    <span>No</span>
+                </label>
+            </fieldset>
+            <div class="button-group">
+                <button id="submit">Submit</button>
+                <button id="return">Return</button>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
