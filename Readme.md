@@ -1,3 +1,3 @@
 The Odin Project
-[x] Javascript
-[x] React
+[x]- Javascript
+[x]- React
