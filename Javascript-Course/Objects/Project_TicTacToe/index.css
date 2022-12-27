@@ -1,0 +1,75 @@
+body,html{
+    padding:0;
+    margin:0;
+}
+main{
+    width:70vh;
+    height:75vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    align-items: center;
+}
+#players{
+    width:inherit;
+    display: flex;
+    flex-direction: row;
+}
+#players>*{
+    text-align:center;
+    margin-bottom: 5%;
+}
+#game-board-container{
+    width:90%;
+    height:90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 1px solid black;
+}
+.game-board-cell{
+    border: 1px solid black;
+    margin: 5%;
+    font-size: 10vh;
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+@media(max-height:300px){
+    main{
+        width:300px;
+        height: 300px;
+    }
+    .game-board-cell{
+        font-size: 100px;
+    }
+}
+#btn-hard-mode{
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%,0%);
+    font-size: 3vh;
+    background-color: greenyellow;
+    border: 2px solid black;
+}
+#btn-hard-mode:hover{
+    cursor:pointer;
+    font-weight: bold;
+}
+#btn-easy-mode{
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%,0%);
+    font-size: 3vh;
+    background-color: rosybrown;
+    border: 2px solid black;
+}
+#btn-easy-mode:hover{
+    cursor:pointer;
+    font-weight: bold;
+}
