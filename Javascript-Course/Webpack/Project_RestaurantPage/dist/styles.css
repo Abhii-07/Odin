@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    color: #2A2D34;
+}
+
+#content {
+    font-family: 'Poppins', sans-serif;
+}
+
+#top-bar {
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2A2D34;
+    text-transform: uppercase;
+}
+
+#logo-container {
+    display: flex;
+    color: rgb(226, 226, 226);
+    font-size: 13px;
+}
+
+#logo {
+    height: 30px;
+    fill: currentColor !important;
+    margin: 10px;
+}
+
+#logo-text {
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 30px;
+    color: rgb(226, 226, 226);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#menu-container, #contact-container {
+    margin-top: 50px;
+    color: #2A2D34;
+    text-align: center;
+}
+
+#home-container {
+    color: #2A2D34;
+    text-align: center;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.active-tab {
+    text-decoration: underline;
+}
+
+#home-img-container {
+    height: 70vh;
+    width: 100%;
+    background-image: url('images/pizza-wallpaper.jpg');
+    background-color: rgb(226, 226, 226);
+    background-size: 100%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    font-family: 'Londrina Solid', cursive;
+    font-size: xx-large;
+    text-align: right;
+}
+
+#home-title {
+    padding-top: 10%;
+    margin-right: 15vh;
+    color: rgb(224, 224, 224);
+}
+
+#home-subtitle {
+    padding-top: 2%;
+    margin-right: 15vh;
+    color: rgb(224, 224, 224);
+}
+
+#about-title {
+    padding-top: 10vh;
+}
+
+#about-text {
+    margin: 0 10% 0 10%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#menu-title {
+    padding-bottom: 50px;
+}
+
+#tile-container {
+    width: 90%;
+    margin: auto;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15vh;
+    margin-bottom: 15vh;
+}
+
+.menu-tiles {
+    background-color: white;
+    height: 65vh;
+    width: 40vh;
+    margin: auto;
+    box-shadow: 0 0 20px 3px;
+    border-radius: 10px;
+    transition: .35s;
+}
+
+.menu-tiles:hover {
+    transform: scale(1.01);
+}
+
+.menu-images {
+    height: 50%;
+    max-width: 100%;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: .35s;
+}
+
+.tile-div {
+    margin: auto;
+    height: 20%;
+    max-width: 90%;
+    border-bottom: black solid 1px;
+}
+
+.tile-title {
+    padding-top: 10%;
+}
+
+.tile-text {
+    padding-top: 5%;
+}
+
+#contact-container {
+    font-size: x-large;
+}
+
+#data-container {
+    width: 50%;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.single-data-container {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+#container-three {
+    border: none;
+}
+
+.contact-icons {
+    max-width: 40px;
+    padding-left: 15px;
+}
+
+.contact-text {
+    padding-left: 20px;
+}
